@@ -91,3 +91,7 @@ Route::resource('photos', PhotoController::class)->except([
 Route::get('/greeting', function () { 
     return view('hello', ['name' => 'Fiera']); 
 });
+
+Route::get('/greeting', function () { 
+    return view('blog.hello', ['name' => 'Fiera']); 
+}); 
