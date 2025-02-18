@@ -32,3 +32,7 @@ Route::get('/selamatdatang', function () {
 Route::get('/about', function () {
     return 'NIM: 2341720220, Nama: Fiera Ziadattun Nisa';
 });
+
+Route::get('/user/{name}', function ($name) { 
+    return 'Nama saya '.$name; 
+});
