@@ -95,3 +95,6 @@ Route::get('/greeting', function () {
 Route::get('/greeting', function () { 
     return view('blog.hello', ['name' => 'Fiera']); 
 }); 
+
+Route::get('/greeting', [WelcomeController::class, 
+'greeting']); 
