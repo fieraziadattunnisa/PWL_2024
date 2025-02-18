@@ -28,3 +28,7 @@ Route::get('/world', function () {
 Route::get('/selamatdatang', function () {
     return 'Selamat Datang';
 });
+
+Route::get('/about', function () {
+    return 'NIM: 2341720220, Nama: Fiera Ziadattun Nisa';
+});
