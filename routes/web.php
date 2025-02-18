@@ -48,3 +48,7 @@ Route::get('/articles/{id}', function ($id) {
 Route::get('/user/{name?}', function ($name=null) {
     return 'Nama saya '.$name; 
 });
+
+Route::get('/user/{name?}', function ($name='John') { 
+    return 'Nama saya '.$name; 
+    });
