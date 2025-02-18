@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,3 +56,12 @@ Route::get('/user/{name?}', function ($name='John') {
     });
 
 Route::get('/hello', [WelcomeController::class, 'hello']);
+
+// Route untuk /index
+Route::get('/selamatdatang', [PageController::class, 'selamatDatang']);
+
+// Route untuk /about
+Route::get('/about', [PageController::class, 'about']);
+
+// Route untuk /articles/{id}
+Route::get('/articles/{id}', [PageController::class, 'articles']);
